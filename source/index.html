@@ -4,16 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин по продаже велосипедов Moon</title>
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin>
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header nojs">
       <nav class="header-nav">
-        <button class="header-nav__toggle" type="button" aria-label="Открыть меню">
+        <button class="header-nav__toggle nojs" type="button" aria-label="Открыть меню">
           <span class="header-nav__toogle-icon"></span>
         </button>
-        <ul class="header-nav__list">
+        <ul class="header-nav__list nojs">
           <li class="header-nav__item">
-            <a class="header-nav__link" href="#">О нас</a>
+            <a class="header-nav__link" href="#title-section">О нас</a>
           </li>
           <li class="header-nav__item">
             <a class="header-nav__link" href="#">Виды велосипедов</a>
@@ -30,24 +35,24 @@
     <main class="page-main">
       <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
       <section class="title-section">
-        <div class="title-section__info">
-          <img class="title-section__logo" src="images/logo.svg" width="68" height="20" alt="Логотип магазина. Надпись Moon">
-          <h2 class="title-section__heading">Мы продаем велосипеды</h2>
-          <p class="title-section__intro">
-            Наш магазин отбирает только самые лучшие велосипеды для продажи
-          </p>
-        </div>
-        <div class="title-section__form">
-          <p class="title-section__form-intro">
-            Заполните поля ниже и мы подберем велосипед Вашей мечты
-          </p>
-          <form class="form" action="/" method="GET">
-            <div class="form__input-wrapper">
+        <div class="title-section__wrapper">
+          <div class="title-section__info">
+            <img class="title-section__logo" src="images/logo.svg" width="68" height="20" alt="Логотип магазина. Надпись Moon">
+            <h2 class="title-section__heading">Мы продаем велосипеды</h2>
+            <p class="title-section__intro">
+              Наш магазин отбирает только самые лучшие велосипеды для продажи
+            </p>
+          </div>
+          <div class="title-section__form">
+            <p class="title-section__form-intro">
+              Заполните поля ниже и мы подберем велосипед Вашей мечты
+            </p>
+            <form action="/" method="GET">
               <input class="form__input" type="text" name="user_name" id="name" placeholder="Введите Ваше Имя" required>
               <input class="form__input" type="tel" name="user-phone" id="phone" placeholder="Введите Ваш номер телефона" required>
-            </div>
-            <button class="main-button form__button" type="submit">Подобрать велосипед мечты</button>
-          </form>
+              <button class="main-button form__button" type="submit">Подобрать велосипед мечты</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
