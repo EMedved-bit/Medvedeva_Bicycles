@@ -11,8 +11,8 @@
   height: 50px;
   border: none;
   background-color: $light-blue;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: -22px;
   right: 0;
   z-index: 11;
 
@@ -26,6 +26,7 @@
   }
 
   &--opened {
+    position: fixed;
     background: none;
     top: 7px;
     right: 7px;
@@ -50,7 +51,9 @@
       bottom: 50%;
     }
 
-    &:active {
+    &:active,
+    &:focus {
+      background: none;
       &::before,
       &::after {
         background-color: $dark-grey;

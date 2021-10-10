@@ -11,14 +11,16 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header nojs">
       <nav class="header-nav">
-        <button class="header-nav__toggle" type="button" aria-label="Открыть меню">
+        <!--Для открытия меню необходимо поставить header-nav__toggle--opened-->
+        <button class="header-nav__toggle nojs" type="button" aria-label="Открыть меню">
           <span class="header-nav__toogle-icon"></span>
         </button>
-        <ul class="header-nav__list">
+        <!--Для открытия меню необходимо поставить header-nav__list--opened-->
+        <ul class="header-nav__list nojs">
           <li class="header-nav__item">
-            <a class="header-nav__link" href="#title-section">О нас</a>
+            <a class="header-nav__link" href="#">О нас</a>
           </li>
           <li class="header-nav__item">
             <a class="header-nav__link" href="#">Виды велосипедов</a>
@@ -50,8 +52,12 @@
               Заполните поля ниже и мы подберем велосипед Вашей мечты
             </p>
             <form action="/" method="GET">
-              <input class="form__input" type="text" name="user_name" id="name" placeholder="Введите Ваше Имя" required>
-              <input class="form__input" type="tel" name="user-phone" id="phone" placeholder="Введите Ваш номер телефона" required>
+              <label>
+                <input class="form__input" type="text" name="user_name" id="name" placeholder="Введите Ваше Имя" required>
+              </label>
+              <label>
+                <input class="form__input" type="tel" name="user-phone" id="phone" placeholder="Введите Ваш номер телефона"  pattern="+2[0-9]{3}-[0-9]{3}" required>
+              </label>
               <button class="main-button form__button" type="submit">Подобрать велосипед мечты</button>
             </form>
           </div>
@@ -60,4 +66,5 @@
     </main>
     <footer>
     </footer>
+    <script src="js/script.js" type="module"></script>
   </body>
