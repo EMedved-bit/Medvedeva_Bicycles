@@ -1,4 +1,5 @@
 import "./menu.js";
+import "./map.js";
 
 const nojsElements = document.querySelectorAll(".nojs");
 

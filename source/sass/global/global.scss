@@ -16,3 +16,20 @@
 *::before {
   box-sizing: border-box;
 }
+
+.section-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $dark-grey;
+  text-align: center;
+  margin: 0;
+
+  @media (max-width: $desktop-width) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

@@ -3,6 +3,7 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
+@import "global/leaflet.scss";
 
 // Blocks
 
@@ -10,3 +11,6 @@
 @import "blocks/page-header.scss";
 @import "blocks/header-nav.scss";
 @import "blocks/title-section.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/map.scss";
+@import "blocks/contacts.scss";
