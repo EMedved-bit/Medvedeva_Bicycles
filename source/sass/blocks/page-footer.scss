@@ -17,6 +17,10 @@
   @media (max-width: $desktop-width) {
     margin-bottom: 20px;
   }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .page-footer__intro {
