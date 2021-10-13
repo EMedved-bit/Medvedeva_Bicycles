@@ -1,0 +1,137 @@
+.bicycles-video {
+  padding: 120px 0 0;
+  background-color: $background-dark;
+  position: relative;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 70px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 84px;
+  }
+
+  &::after {
+    content: "";
+    height: 76px;
+    width: 100%;
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    @media (max-width: $desktop-width) {
+      height: 85px;
+    }
+
+    @media (max-width: $tablet-width) {
+      height: 49px;
+    }
+  }
+}
+
+.bicycles-video__title {
+  margin-bottom: 20px;
+
+  @media (max-width: $desktop-width) {
+    line-height: 30px;
+  }
+
+  &--white {
+    color: $white;
+  }
+}
+
+.bicycles-video__intro {
+  margin: 0 auto;
+  max-width: 340px;
+  text-align: center;
+  line-height: 28px;
+  margin-bottom: 56px;
+  color: rgba($white, 0.7);
+
+  @media (max-width: $desktop-width) {
+    max-width: 429px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+.bicycles-video__wrapper {
+  max-width: 929px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: $desktop-width) {
+    max-width: 503px;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 288px;
+  }
+}
+
+.bicycles-video__video {
+  width: 100%;
+  height: auto;
+}
+
+.bicycles-video__play-button {
+  padding: 0;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: $light-blue;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 65px;
+    height: 65px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: darken($light-blue, 10%);
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../images/arrow_icon.svg");
+    width: 14px;
+    height: 19px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: $desktop-width) {
+      width: 18px;
+      height: 25px;
+      margin-left: 8px;
+      margin-top: 1px;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 13px;
+      height: 18px;
+      margin-left: 5px;
+      margin-top: 0;
+    }
+  }
+}
