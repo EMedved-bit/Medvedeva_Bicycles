@@ -2,6 +2,10 @@ root: true
 
 env:
   browser: true
+  es6: true
+
+parserOptions:
+  sourceType: "module"
 
 extends:
-  "htmlacademy/es6"
+  "htmlacademy/es5"

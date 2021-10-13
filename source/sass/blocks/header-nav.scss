@@ -54,10 +54,13 @@
     &:active,
     &:focus {
       background: none;
-      &::before,
-      &::after {
-        background-color: $dark-grey;
-      }
+    }
+
+    &:active::before,
+    &:active::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: $dark-grey;
     }
 
     .header-nav__toogle-icon {

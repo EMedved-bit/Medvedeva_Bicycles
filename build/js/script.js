@@ -1,8 +1,8 @@
-import "./menu.js";
-import "./map.js";
+import './menu.js';
+import './map.js';
 
-const nojsElements = document.querySelectorAll(".nojs");
+const nojsElements = document.querySelectorAll('.nojs');
 
 nojsElements.forEach((element) => {
-  element.classList.remove("nojs")
-})
+  element.classList.remove('nojs');
+});
