@@ -1,5 +1,5 @@
 .facts {
-  padding: 151px 0 130px;
+  padding: 151px 0;
 
   @media (max-width: $desktop-width) {
     padding: 0 0 70px;
@@ -10,7 +10,7 @@
   margin-bottom: 50px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -35,6 +35,7 @@
     display: flex;
     flex-direction: column;
     max-width: 263px;
+    gap: 0;
   }
 }
 
@@ -51,7 +52,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 17px 0;
+    margin-bottom: 36px;
   }
 }
 
@@ -61,14 +62,10 @@
   line-height: 38px;
   color: $light-blue;
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
 
   @media (max-width: $desktop-width) {
     margin-bottom: 18px;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin-bottom: 13px;
   }
 }
 
@@ -79,4 +76,8 @@
   line-height: 34px;
   color: $black;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
 }

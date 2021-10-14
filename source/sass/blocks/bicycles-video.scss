@@ -13,7 +13,7 @@
 
   &::after {
     content: "";
-    height: 76px;
+    height: 108px;
     width: 100%;
     background-color: $white;
     position: absolute;
@@ -21,11 +21,11 @@
     bottom: -1px;
 
     @media (max-width: $desktop-width) {
-      height: 85px;
+      height: 96px;
     }
 
     @media (max-width: $tablet-width) {
-      height: 49px;
+      height: 60px;
     }
   }
 }
@@ -57,7 +57,7 @@
 
   @media (max-width: $tablet-width) {
     max-width: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 }
 
@@ -89,7 +89,7 @@
   background-color: $light-blue;
   border: none;
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -104,11 +104,13 @@
   @media (max-width: $tablet-width) {
     width: 65px;
     height: 65px;
+    top: 47%;
   }
 
   &:focus,
   &:hover {
     background-color: darken($light-blue, 10%);
+    cursor: pointer;
   }
 
   &::before {

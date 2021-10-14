@@ -2,7 +2,7 @@
   width: 100%;
   background-image: url("../images/title_background@1x.jpg");
   background-color: $dark-grey;
-  padding: 318px 15px 240px;
+  padding: 316px 15px 220px;
   background-size: cover;
   background-position: center;
 
@@ -36,7 +36,7 @@
     width: 100%;
     background-image: url("../images/title_background@1x.jpg");
     background-color: $dark-grey;
-    padding: 134px 121px 80px;
+    padding: 135px 121px 80px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -65,7 +65,7 @@
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
-  margin: 30px 0 24px;
+  margin: 22px 0 24px;
 
   @media (max-width: $desktop-width) {
     font-size: 30px;
@@ -77,10 +77,10 @@
 
 .title-section__intro {
   font-size: 20px;
+  color: rgba($white, 0.8);
 
   @media (max-width: $desktop-width) {
     font-size: 18px;
-    color: rgba($white, 0.8);
     max-width: 435px;
     margin: 0 auto;
     text-align: center;
@@ -89,6 +89,7 @@
 
 .title-section__form {
   width: 327px;
+  padding-top: 6px;
 
   @media (max-width: $desktop-width) {
     margin: 0 auto;
@@ -106,9 +107,9 @@
   }
 
   input {
-    padding: 14px 0 10px 29px;
+    padding: 15px 0 10px 29px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     font-family: inherit;
     border: 1px solid $border-grey;
     border-radius: 6px;
@@ -127,7 +128,7 @@
     }
 
     @media (max-width: $desktop-width) {
-      padding: 12px 0 12px 21px;
+      padding: 12px 0 14px 23px;
     }
 
     @media (max-width: $tablet-width) {
@@ -166,7 +167,11 @@
 
   @media (max-width: $desktop-width) {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     color: $black;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 21px;
   }
 }

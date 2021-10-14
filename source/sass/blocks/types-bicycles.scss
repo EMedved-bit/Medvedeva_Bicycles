@@ -1,13 +1,13 @@
 .types-bicycles {
-  padding: 149px 0 239px;
+  padding: 149px 0 150px;
   background-color: $background-grey;
 
   @media (max-width: $desktop-width) {
-    padding: 50px 0 20px;
+    padding: 50px 0 18px;
   }
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 10px;
+    padding: 19px 0 11px;
   }
 }
 
@@ -45,18 +45,27 @@
     margin-bottom: 50px;
   }
 
-  picture {
-    position: relative;
-    display: flex;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
+}
 
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-    }
+.types-bicycles__image-wrapper {
+  position: relative;
+  display: flex;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  picture {
+    display: flex;
   }
 
   img {
+    display: flex;
     position: relative;
     border-radius: 10px;
     z-index: 10;
@@ -64,7 +73,7 @@
     height: auto;
   }
 
-  &--circle-decor picture {
+  &--circle-decor {
     &::before {
       width: 180px;
       height: 180px;
@@ -88,7 +97,7 @@
     }
   }
 
-  &--square-decor picture {
+  &--square-decor {
     margin-top: 29px;
 
     @media (max-width: $desktop-width) {
@@ -118,7 +127,13 @@
     }
   }
 
-  &--smallcircle-decor picture {
+  &--smallcircle-decor {
+    margin-top: -8px;
+
+    @media (max-width: $desktop-width) {
+      margin-top: -1px;
+    }
+
     &::before {
       width: 95px;
       height: 95px;
@@ -148,5 +163,5 @@
   font-size: 22px;
   line-height: 34px;
   color: $black;
-  margin-top: 20px;
+  margin-top: 22px;
 }

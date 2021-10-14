@@ -40,7 +40,7 @@
         <div class="title-section__wrapper">
           <div class="title-section__info">
             <a class="title-section__logo-link">
-              <img class="title-section__logo" src="images/logo.svg" width="68" height="20" alt="Логотип магазина. Надпись Moon">
+              <img class="title-section__logo" href="/" src="images/logo.svg" width="68" height="20" alt="Логотип магазина. Надпись Moon">
             </a>
             <h2 class="title-section__heading">Мы продаем велосипеды</h2>
             <p class="title-section__intro">
@@ -53,12 +53,12 @@
             </p>
             <form action="/" method="GET">
               <label>
-                <input class="form__input" type="text" name="user_name" id="name" placeholder="Введите Ваше Имя" required>
+                <input type="text" name="user_name" id="name" placeholder="Введите Ваше Имя" required>
               </label>
               <label>
-                <input class="form__input" type="tel" name="user-phone" id="phone" placeholder="Введите Ваш номер телефона"  pattern="+2[0-9]{3}-[0-9]{3}" required>
+                <input type="tel" name="user-phone" id="phone" placeholder="Введите Ваш номер телефона"  pattern="+2[0-9]{3}-[0-9]{3}" required>
               </label>
-              <button class="main-button form__button" type="submit">Подобрать велосипед мечты</button>
+              <button type="submit">Подобрать велосипед мечты</button>
             </form>
           </div>
         </div>
@@ -95,31 +95,49 @@
       <section class="types-bicycles" id="types-bicycles">
         <h2 class="types-bicycles__title section-title">Виды велосипедов</h2>
         <ul class="types-bicycles__list">
-          <li class="types-bicycles__item types-bicycles__item--circle-decor">
-            <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="images/gallery/road_bike@1x.webp 1x, images/gallery/road_bike@2x.webp 2x" width="270" height="300">
-              <source type="image/webp" srcset="images/gallery/road_bike_desktop@1x.webp 1x, images/gallery/road_bike_desktop@2x.webp 2x">
-              <source media="(max-width: 1023px)" srcset="images/gallery/road_bike@1x.jpg 1x, images/gallery/road_bike@2x.jpg 2x" width="270" height="300">
-              <img class="types-bicycles__image" src="images/gallery/road_bike_desktop@1x.jpg" width="342" height="503" srcset="images/gallery/road_bike_desktop@2x.jpg 2x" alt="Изображение дорожного велосипеда">
-            </picture>
+          <li class="types-bicycles__item">
+            <div class="types-bicycles__image-wrapper types-bicycles__image-wrapper--circle-decor">
+              <picture>
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source type="image/webp" media="(max-width: 1023px)" srcset="images/gallery/road_bike@1x.webp 1x, images/gallery/road_bike@2x.webp 2x">
+                <!-- 1x: 342x503px; 2x: 684x1006px -->
+                <source type="image/webp" srcset="images/gallery/road_bike_desktop@1x.webp 1x, images/gallery/road_bike_desktop@2x.webp 2x">
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source media="(max-width: 1023px)" srcset="images/gallery/road_bike@1x.jpg 1x, images/gallery/road_bike@2x.jpg 2x">
+                <!-- 1x: 342x503px; 2x: 684x1006px -->
+                <img class="types-bicycles__image" src="images/gallery/road_bike_desktop@1x.jpg" width="342" height="503" srcset="images/gallery/road_bike_desktop@2x.jpg 2x" alt="Изображение дорожного велосипеда">
+              </picture>
+            </div>
             <span class="types-bicycles__heading">Дорожный велосипед</span>
           </li>
-          <li class="types-bicycles__item types-bicycles__item--square-decor">
-            <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="images/gallery/mountain_bike@1x.webp 1x, images/gallery/mountain_bike@2x.webp 2x" width="270" height="300">
-              <source type="image/webp" srcset="images/gallery/mountain_bike_desktop@1x.webp 1x, images/gallery/mountain_bike_desktop@2x.webp 2x">
-              <source media="(max-width: 1023px)" srcset="images/gallery/mountain_bike@1x.jpg 1x, images/gallery/mountain_bike@2x.jpg 2x" width="270" height="300">
-              <img class="types-bicycles__image" src="images/gallery/mountain_bike_desktop@1x.jpg" width="342" height="566" srcset="images/gallery/mountain_bike_desktop@2x.jpg 2x" alt="Изображение велосипеда на горном склоне">
-            </picture>
+          <li class="types-bicycles__item">
+            <div class="types-bicycles__image-wrapper types-bicycles__image-wrapper--square-decor">
+              <picture>
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source type="image/webp" media="(max-width: 1023px)" srcset="images/gallery/mountain_bike@1x.webp 1x, images/gallery/mountain_bike@2x.webp 2x">
+                <!-- 1x: 342x566px; 2x: 684x1132px -->
+                <source type="image/webp" srcset="images/gallery/mountain_bike_desktop@1x.webp 1x, images/gallery/mountain_bike_desktop@2x.webp 2x">
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source media="(max-width: 1023px)" srcset="images/gallery/mountain_bike@1x.jpg 1x, images/gallery/mountain_bike@2x.jpg 2x">
+                <!-- 1x: 342x566px; 2x: 684x1132px -->
+                <img class="types-bicycles__image" src="images/gallery/mountain_bike_desktop@1x.jpg" width="342" height="566" srcset="images/gallery/mountain_bike_desktop@2x.jpg 2x" alt="Изображение велосипеда на горном склоне">
+              </picture>
+            </div>
             <span class="types-bicycles__heading">Горный велосипед</span>
           </li>
-          <li class="types-bicycles__item types-bicycles__item--smallcircle-decor">
-            <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="images/gallery/children_bike@1x.webp 1x, images/gallery/children_bike@2x.webp 2x" width="270" height="300">
-              <source type="image/webp" srcset="images/gallery/children_bike_desktop@1x.webp 1x, images/gallery/children_bike_desktop@2x.webp 2x">
-              <source media="(max-width: 1023px)" srcset="images/gallery/children_bike@1x.jpg 1x, images/gallery/children_bike@2x.jpg 2x" width="270" height="300">
-              <img class="types-bicycles__image" src="images/gallery/children_bike_desktop@1x.jpg" width="342" height="512" srcset="images/gallery/children_bike_desktop@2x.jpg 2x" alt="Изображение розового велосипеда">
-            </picture>
+          <li class="types-bicycles__item">
+            <div class="types-bicycles__image-wrapper types-bicycles__image-wrapper--smallcircle-decor">
+              <picture>
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source type="image/webp" media="(max-width: 1023px)" srcset="images/gallery/children_bike@1x.webp 1x, images/gallery/children_bike@2x.webp 2x">
+                <!-- 1x: 342x513px; 2x: 684x1026px -->
+                <source type="image/webp" srcset="images/gallery/children_bike_desktop@1x.webp 1x, images/gallery/children_bike_desktop@2x.webp 2x">
+                <!-- 1x: 270x300px; 2x: 540x600px -->
+                <source media="(max-width: 1023px)" srcset="images/gallery/children_bike@1x.jpg 1x, images/gallery/children_bike@2x.jpg 2x">
+                <!-- 1x: 342x513px; 2x: 684x1026px -->
+                <img class="types-bicycles__image" src="images/gallery/children_bike_desktop@1x.jpg" width="342" height="512" srcset="images/gallery/children_bike_desktop@2x.jpg 2x" alt="Изображение розового велосипеда">
+              </picture>
+            </div>
             <span class="types-bicycles__heading">Детский велосипед</span>
           </li>
         </ul>

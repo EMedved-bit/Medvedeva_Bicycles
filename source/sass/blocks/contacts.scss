@@ -1,9 +1,10 @@
 .contacts {
-  margin: 0;
+  max-width: 558px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
@@ -13,12 +14,6 @@
 }
 
 .contacts__item {
-  margin-right: 90px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
   @media (max-width: $tablet-width) {
     margin-right: 0;
     margin-bottom: 22px;

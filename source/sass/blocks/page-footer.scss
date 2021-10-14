@@ -1,13 +1,13 @@
 .page-footer {
   margin-top: auto;
-  padding: 150px 0 98px;
+  padding: 140px 0 98px;
 
   @media (max-width: $desktop-width) {
-    padding: 70px 35px 52px;
+    padding: 59px 35px 52px;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 70px 0 50px;
+    padding: 60px 0 50px;
   }
 }
 
@@ -15,7 +15,7 @@
   margin-bottom: 30px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     line-height: 30px;
   }
 
@@ -41,6 +41,6 @@
 
   @media (max-width: $tablet-width) {
     padding: 0 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
