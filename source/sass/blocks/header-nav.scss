@@ -28,14 +28,14 @@
   &--opened {
     position: fixed;
     background: none;
-    top: 7px;
-    right: 7px;
+    top: 1px;
+    right: 1px;
     padding: 0;
 
     &::before,
     &::after {
       content: "";
-      width: 40px;
+      width: 30px;
       height: 1px;
       background-color: $border-grey;
       position: absolute;
@@ -121,8 +121,11 @@
     left: 0;
     background-color: $white;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-top: 100px;
     z-index: 10;
+    overflow-y: auto;
 
     &--opened {
       display: flex;

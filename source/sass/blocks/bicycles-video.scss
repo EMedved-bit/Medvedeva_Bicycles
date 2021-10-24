@@ -72,7 +72,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 288px;
+    max-width: 100%;
+    margin: 0 16px;
   }
 }
 

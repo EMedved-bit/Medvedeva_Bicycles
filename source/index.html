@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Магазин по продаже велосипедов Moon</title>
+    <title>Магазин велосипедов Moon</title>
+    <meta name="description" content="Moon - это магазин по продаже велосипедов">
     <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" crossorigin>
@@ -39,8 +40,8 @@
       <section class="title-section">
         <div class="title-section__wrapper">
           <div class="title-section__info">
-            <a class="title-section__logo-link">
-              <img class="title-section__logo" href="/" src="images/logo.svg" width="68" height="20" alt="Логотип магазина. Надпись Moon">
+            <a class="title-section__logo-link" href="/">
+              <img class="title-section__logo" src="images/logo.svg" width="68" height="20" alt="Логотип магазина. Надпись Moon">
             </a>
             <h2 class="title-section__heading">Мы продаем велосипеды</h2>
             <p class="title-section__intro">
@@ -56,7 +57,7 @@
                 <input type="text" name="user_name" id="name" placeholder="Введите Ваше Имя" required>
               </label>
               <label>
-                <input type="tel" name="user-phone" id="phone" placeholder="Введите Ваш номер телефона"  pattern="+2[0-9]{3}-[0-9]{3}" required>
+                <input type="tel" name="user-phone" id="phone" placeholder="Введите Ваш номер телефона" required>
               </label>
               <button type="submit">Подобрать велосипед мечты</button>
             </form>
@@ -169,6 +170,7 @@
         </li>
       </ul>
     </footer>
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
   </body>

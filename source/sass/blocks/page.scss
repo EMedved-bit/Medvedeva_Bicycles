@@ -2,7 +2,6 @@
   height: 100%;
   background-color: $white;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 .page__body {
@@ -15,4 +14,6 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
 }
